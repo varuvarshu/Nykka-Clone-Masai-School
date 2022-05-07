@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>nykaa - Successfully</title>
+    <link rel="shortcut icon" href="https://www.nykaa.com/favicon.ico" type="image/x-icon">
+
+    <style>
+        body{
+            text-align: center;
+           font-family: roboto,sans-serif;
+           background-image: url("https://cdn-media-2.freecodecamp.org/w1280/5f9c9eb9740569d1a4ca3eb6.jpg");
+        }
+        img{
+            width: 100px;
+        }
+        button{
+            background-color: rgb(50, 199, 50);
+            color: white;
+            padding: 5px;
+            font-size: 20px;
+            border-radius: 6px;
+        }
+        p {
+            font-weight: 600;
+        }
+    </style>
+</head>
+<body>
+    <img src="https://www.clipartmax.com/png/full/179-1795386_patient-success-success-icon-png.png" alt="">
+    <h2>Thank you for your purchase!</h2>
+    <p>Your order id: <span id='order'></span></p>
+
+    <button onclick="btn()">Continue Shopping</button>
+</body>
+<script>
+    document.getElementById("order").innerHTML = Math.round(Math.random()*3311000);
+
+    function btn(){
+        location.replace("index.html")
+    }
+      
+</script>
+</html>
